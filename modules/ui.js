@@ -2,14 +2,15 @@
 // based on the data retrieved from the API request.
 
 
-export function displayCats(cats) {
-    const catGallary = document.getElementById('catGallary');
-    catGallary.innerHTML = '';
+ function displayCats(cats) {
+    const catGallery = document.getElementById('catGallery');
+    catGallery.innerHTML = '';
     cats.forEach(cat => {
         const catElement = document.createElement('img');
-        catElement.classList.add('cat-img');
+        catElement.classList.add('cat-image');
         catElement.src = cat.url;
-        catElement.alt = "A cute cat";
-        catGallary.appendChild(catElement);
+        catElement.alt = 'A cute cat';
+        catGallery.appendChild(catElement);
     });
 }
+module.exports = displayCats;
