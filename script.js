@@ -1,5 +1,7 @@
-
- async function getNewCat() {
+// create the asynchronous function to get data from the cat API
+ 
+ 
+ async function getNewCats() {
 
     const headers = new Headers({
         "Content-Type": "application/json",
@@ -19,6 +21,9 @@
          
  }
 
+ // Create a  CALL-BACK function that takes the cats object returned as a response
+ // and iterates through each object and add it to the html document as a 
+ // gallery of images.
     function displayCats(cats) {
         const catGallery = document.getElementById('catGallery');
         catGallery.innerHTML = '';
@@ -34,4 +39,5 @@
         });
     }
 
-    getNewCat();
+    // This is when the API request get executed by calling the getNewCats()
+    getNewCats();
