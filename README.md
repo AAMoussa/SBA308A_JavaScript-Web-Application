@@ -12,12 +12,12 @@ Objectives:
 
   Accomplishments:
   ----------------
-1-  I created a simple small single-webpage that upon loading, it makes a fetch/request to the Cat API.
-2-  First, I created the HTML/CSS document/sheet to structure/style the web page.
-3-  The header is clickable and interactive to reload a new set of cat pictures to be displayed in the body.
-4-  The .js file consisted of two main functions.
-5-  The getNewCats() functions is Asynchronous and makes the fetch() Cat API GET request, such that my API-key is passed within the header parameter.
-6-  The returned object of cats is passed to the displayCats() function that is defined later in the same file, which 
+*  I created a simple small single-webpage that upon loading, it makes a fetch/request to the Cat API.
+*  First, I created the HTML/CSS document/sheet to structure/style the web page.
+*  The header is clickable and interactive to reload a new set of cat pictures to be displayed in the body.
+*  The .js file consisted of two main functions.
+*  The getNewCats() functions is Asynchronous and makes the fetch() Cat API GET request, such that my API-key is passed within the header parameter.
+*  The returned object of cats is passed to the displayCats() function that is defined later in the same file, which 
     itirates over each cat object, assign it to a newly created image element and push it to div element seen as the gallery.
 
 OPERATION:
